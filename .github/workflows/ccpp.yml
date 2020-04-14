@@ -18,7 +18,7 @@ jobs:
     - name: Zip artifacts
       uses: montudor/action-zip@v0.1.0
       with:
-        args: zip -qq -r ./release.zip ./artifacts
+        args: zip -qq -r ./release.zip ./libleveldb.a
     - name: Create release
       id: create_release
       uses: actions/create-release@v1.0.0
